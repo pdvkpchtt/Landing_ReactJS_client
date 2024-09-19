@@ -25,7 +25,12 @@ const Card = ({
         <div className="flex flex-col items-center gap-[20px]">
           {/* logo */}
           <div className="space-y-[5px]">
-            <img src="/logo2.png" width={225} height={44} alt="logo" />
+            <img
+              src="/oil_and_gas/logo2.png"
+              width={225}
+              height={44}
+              alt="logo"
+            />
             <div className="w-[156px] mx-auto h-[5px] bg-[#2E3549]" />
           </div>
           {/* logo */}
@@ -60,7 +65,12 @@ const Card = ({
             >
               {/* logo */}
               <div className="space-y-[5px]">
-                <img src="/logo2.png" width={225} height={44} alt="logo" />
+                <img
+                  src="/oil_and_gas/logo2.png"
+                  width={225}
+                  height={44}
+                  alt="logo"
+                />
                 <div className="w-[156px] mx-auto h-[5px] bg-[#2E3549]" />
               </div>
               {/* logo */}

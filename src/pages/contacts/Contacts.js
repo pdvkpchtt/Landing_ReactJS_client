@@ -50,7 +50,7 @@ const Contacts = () => {
           {`КОНТАКТЫ`}
         </p>
         <img
-          src="/2.jpg"
+          src="/oil_and_gas/2.jpg"
           className="absolute w-[298px] h-[335px] object-cover z-[1]"
           alt="bg"
         />
@@ -60,7 +60,7 @@ const Contacts = () => {
       {/* bg factory */}
       <div className="absolute left-0 w-full h-[258px] overflow-hidden">
         <img
-          src="/bg.jpg"
+          src="/oil_and_gas/bg.jpg"
           className="w-full h-full object-cover absolute z-[-1]"
           alt="bg"
         />

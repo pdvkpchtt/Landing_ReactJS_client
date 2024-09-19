@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-[#282828] w-full h-[110px] max-h-[110px] overflow-hidden z-[10]">
       <div className="w-full max-w-[1374px] mx-auto flex flex-row justify-between items-center h-[110px]">
         <img
-          src="/logo_dark.png"
+          src="/oil_and_gas/logo_dark.png"
           width={130.5}
           height={90}
           alt="logo"
