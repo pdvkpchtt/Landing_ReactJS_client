@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/oil_and_gas/static/css/main.ac9e6dab.css",
-    "main.js": "/oil_and_gas/static/js/main.efcbbe74.js",
+    "main.js": "/oil_and_gas/static/js/main.f359d234.js",
     "static/js/453.ec5e0805.chunk.js": "/oil_and_gas/static/js/453.ec5e0805.chunk.js",
     "index.html": "/oil_and_gas/index.html",
     "main.ac9e6dab.css.map": "/oil_and_gas/static/css/main.ac9e6dab.css.map",
-    "main.efcbbe74.js.map": "/oil_and_gas/static/js/main.efcbbe74.js.map",
+    "main.f359d234.js.map": "/oil_and_gas/static/js/main.f359d234.js.map",
     "453.ec5e0805.chunk.js.map": "/oil_and_gas/static/js/453.ec5e0805.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac9e6dab.css",
-    "static/js/main.efcbbe74.js"
+    "static/js/main.f359d234.js"
   ]
 }
