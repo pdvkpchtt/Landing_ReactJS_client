@@ -7,7 +7,7 @@ const About = () => {
           {`О НАС`}
         </p>
         <img
-          src="/oil_and_gas/2.jpg"
+          src="/2.jpg"
           className="absolute w-[298px] h-[335px] object-cover z-[1]"
           alt="bg"
         />
@@ -17,7 +17,7 @@ const About = () => {
       {/* bg factory */}
       <div className="absolute left-0 w-full h-[258px] overflow-hidden">
         <img
-          src="/oil_and_gas/bg.jpg"
+          src="/bg.jpg"
           className="w-full h-full object-cover absolute z-[-1]"
           alt="bg"
         />
