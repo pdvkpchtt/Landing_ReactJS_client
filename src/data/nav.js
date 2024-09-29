@@ -6,7 +6,7 @@ import Products from "../pages/products/Products";
 export const nav = [
   {
     text: "",
-    link: "/oil_and_gas",
+    link: "/",
     component: <Main />,
   },
   {
