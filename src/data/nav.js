@@ -5,7 +5,7 @@ import Products from "../pages/products/Products";
 
 export const nav = [
   {
-    text: "",
+    text: "ГЛАВНАЯ",
     link: "/",
     component: <Main />,
   },

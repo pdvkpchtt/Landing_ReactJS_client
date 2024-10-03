@@ -15,7 +15,13 @@ const Footer = () => {
         />
 
         <div className="flex flex-col gap-[8px]">
-          <p className="text-[14px] text-white">Политика конфиденциальности</p>
+          <a
+            className="text-[14px] text-white underline transition duration-[250ms] hover:no-underline"
+            href="https://docs.google.com/document/d/1Om2fqIpQWsSBrYnLkoMqbGZa3lbHc9lDNJMm3moy_V8/edit?usp=sharing"
+            target="_blank"
+          >
+            Политика конфиденциальности
+          </a>
           <a
             target="_blank"
             href="mailto:ssc-solutions@yandex.ru"

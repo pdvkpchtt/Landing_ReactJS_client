@@ -19,25 +19,40 @@ const Card = ({
     <>
       <motion.div
         layoutId={id}
-        className="p-[15px] border-b-[15px] border-[#315EAB] flex flex-col items-center justify-between gap-[20px] shadow-2xl"
+        className="p-[15px] border-b-[15px] border-[#315EAB] flex flex-col items-center justify-between gap-[20px] shadow-2xl relative"
         style={{ width }}
       >
+        <img
+          src="/avatar.jpg"
+          className="absolute w-full h-full object-cover z-[-1]"
+          alt="bg"
+        />
         <div className="flex flex-col items-center gap-[20px]">
           {/* logo */}
           <div className="space-y-[5px]">
-            <img src="/logo2.png" width={225} height={44} alt="logo" />
+            <img
+              src="/logo2.png"
+              width={225}
+              height={44}
+              alt="logo"
+              style={{
+                mixBlendMode: "multiply",
+              }}
+            />
             <div className="w-[156px] mx-auto h-[5px] bg-[#2E3549]" />
           </div>
           {/* logo */}
 
           {/* text */}
-          <p className="text-[14px] text-[#2c2c2c] text-center">{text}</p>
+          <p className="text-[14px] text-[#000] text-center font-medium">
+            {text}
+          </p>
           {/* text */}
         </div>
 
         <button
           onClick={onClick}
-          className="border-[2px] text-[#315EAB] text-[22px] font-medium border-[#315EAB] w-[187px] h-[50px] text-center flex items-center justify-center"
+          className="border-[2px] bg-white text-[#315EAB] text-[22px] font-medium border-[#315EAB] w-[187px] h-[50px] text-center flex items-center justify-center"
         >
           Подробнее
         </button>
