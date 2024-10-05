@@ -6,6 +6,9 @@ import { Input, InputMaskCustom } from "../../ui/Input";
 import CheckBox from "../../ui/CheckBox";
 import { Helmet } from "react-helmet";
 
+import FormError from "../../components/FormError";
+import FormSuccess from "../../components/FormSuccess";
+
 const Contacts = () => {
   const {
     register,
@@ -27,20 +30,24 @@ const Contacts = () => {
   const [result, setResult] = useState(null);
 
   const handleForm = async (values) => {
-    const res = await fetch(
-      "https://pdvkpchtt-oil-and-gas-nodemailer-1ef5.twc1.net/sendmail_shloos",
-      {
-        method: "POST",
-        credentials: "include",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(values),
-      }
-    );
+    try {
+      const res = await fetch(
+        "https://pdvkpchtt-oil-and-gas-nodemailer-1ef5.twc1.net/sendmail_shloos",
+        {
+          method: "POST",
+          credentials: "include",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        }
+      );
 
-    const data = await res.json();
-    console.log(data);
+      const data = await res.json();
+      setResult(data);
+    } catch (e) {
+      setResult({ status: "bad" });
+    }
   };
 
   const submitForm = (values) => {
@@ -89,6 +96,12 @@ const Contacts = () => {
           <p className="text-center font-semibold text-[25px] text-[#315EAB] whitespace-pre-line leading-[120%]">
             ssc-solutions@yandex.ru
           </p>
+
+          {result?.status === "good" ? (
+            <FormSuccess message={"Заявка успешно отправлена"} />
+          ) : result?.status === "bad" ? (
+            <FormError message={"Что-то пошло не так"} />
+          ) : null}
 
           {/* form */}
           <form
