@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input, InputMaskCustom } from "../../ui/Input";
 import CheckBox from "../../ui/CheckBox";
-import { sendMail } from "../../mail/sendMail";
 import { Helmet } from "react-helmet";
 
 const Contacts = () => {
@@ -28,10 +27,20 @@ const Contacts = () => {
   const [result, setResult] = useState(null);
 
   const handleForm = async (values) => {
-    sendMail(values);
-    // const res = await signin(values, company);
-    // setResult(res);
-    // if (!res?.error) reset();
+    const res = await fetch(
+      "https://pdvkpchtt-oil-and-gas-nodemailer-1ef5.twc1.net/sendmail_shloos",
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      }
+    );
+
+    const data = await res.json();
+    console.log(data);
   };
 
   const submitForm = (values) => {
