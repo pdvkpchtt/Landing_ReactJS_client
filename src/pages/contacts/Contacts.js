@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Input, InputMaskCustom } from "../../ui/Input";
 import CheckBox from "../../ui/CheckBox";
 import { Helmet } from "react-helmet";
+import { Oval } from "react-loader-spinner";
 
 import FormError from "../../components/FormError";
 import FormSuccess from "../../components/FormSuccess";
@@ -170,7 +171,22 @@ const Contacts = () => {
                 check ? "bg-[#315EAB]" : "bg-[#a3a3a3]"
               } select-none h-[44px] flex items-center justify-center text-center text-[20px] font-medium text-white leading-[20px] transition-colors duration-[250ms]`}
             >
-              Отправить запрос
+              {isPending ? (
+                <Oval
+                  height={22}
+                  width={22}
+                  color="rgba(255, 255, 255, 1)"
+                  wrapperStyle={{}}
+                  wrapperClass=""
+                  visible={true}
+                  ariaLabel="oval-loading"
+                  secondaryColor="rgba(255, 255, 255, 0.3)"
+                  strokeWidth={6}
+                  strokeWidthSecondary={6}
+                />
+              ) : (
+                "Отправить запрос"
+              )}
             </button>
           </form>
           {/* form */}
