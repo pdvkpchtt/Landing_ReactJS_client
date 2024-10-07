@@ -34,6 +34,7 @@ const Contacts = () => {
     try {
       const res = await fetch(
         "https://pdvkpchtt-oil-and-gas-nodemailer-1ef5.twc1.net/sendmail_shloos",
+        // "http://localhost:9000/sendmail_shloos",
         {
           method: "POST",
           credentials: "include",
@@ -46,6 +47,7 @@ const Contacts = () => {
 
       const data = await res.json();
       setResult(data);
+      reset();
     } catch (e) {
       setResult({ status: "bad" });
     }
