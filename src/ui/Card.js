@@ -60,14 +60,14 @@ const Card = ({
 
       <AnimatePresence>
         {selectedId === id && (
-          <motion.div className="fixed [@media(pointer:coarse)]:hidden top-0 left-0 w-full h-full dark:bg-opacity-[50%] bg-opacity-[20%] z-[100]">
+          <motion.div className="fixed [@media(max-width:1050px)]:hidden top-0 left-0 w-full h-full dark:bg-opacity-[50%] bg-opacity-[20%] z-[100]">
             <motion.div
               initial={"initial"}
               animate={"isOpen"}
               exit={"exit"}
               onClick={() => setSelectedId(null)}
               variants={modalVariant}
-              className="fixed [@media(pointer:coarse)]:hidden top-0 left-0 w-full h-full bg-[#4A5479] dark:bg-black dark:bg-opacity-[50%] bg-opacity-[20%] z-[-1]"
+              className="fixed [@media(max-width:1050px)]:hidden top-0 left-0 w-full h-full bg-[#4A5479] dark:bg-black dark:bg-opacity-[50%] bg-opacity-[20%] z-[-1]"
             ></motion.div>
             <motion.div
               layoutId={selectedId}

@@ -8,7 +8,7 @@ const Main = () => {
       </Helmet>
       <div className="flex flex-col w-full">
         {/* top image block */}
-        <div className="relative">
+        <div className="relative  [@media(max-width:1050px)]:hidden">
           <p className="text-white text-[70px] font-extrabold absolute z-[3] whitespace-pre-line leading-[72px] custom-shadow left-[25px] top-[50px] tracking-[-3%]">
             {`КОМПЛЕКСНЫЙ\nПОДХОД К\nРЕШЕНИЮ\nВАШИХ ЗАДАЧ`}
           </p>
@@ -43,7 +43,7 @@ const Main = () => {
         {/* bg factory */}
         {/* top image block */}
 
-        <p className="mt-[calc(672.94px+70px)] mb-[75px] text-center font-semibold text-[28px] whitespace-pre-line leading-[120%]">
+        <p className="mt-[calc(672.94px+70px)] [@media(max-width:1050px)]:mt-[calc(507px+0px)] mb-[75px] text-center font-semibold text-[28px] whitespace-pre-line leading-[120%]">
           НАША КОМАНДА ГОТОВА РЕШИТЬ ЛЮБУЮ СЛОЖНУЮ{"\n"}ЗАДАЧУ!
         </p>
 
