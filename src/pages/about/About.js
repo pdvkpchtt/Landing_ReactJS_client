@@ -9,7 +9,7 @@ const About = () => {
       <div className="flex flex-col w-full">
         {/* top image block */}
         <div className="relative">
-          <p className="text-white text-[70px] font-extrabold absolute z-[3] whitespace-pre-line leading-[72px] custom-shadow left-[50px] top-[100px] tracking-[-3%]">
+          <p className="text-white text-[70px] font-extrabold [@media(max-width:1050px)]:text-[65px] [@media(max-width:1050px)]:left-[10px] absolute z-[3] whitespace-pre-line leading-[72px] custom-shadow left-[50px] top-[100px] tracking-[-3%]">
             {`О НАС`}
           </p>
           <img
@@ -44,7 +44,7 @@ const About = () => {
           стандартов и законов Российской Федерации, норм ASME, позволяет решать
           задачи любой сложности возникающие на любом этапе реализации проекта.
           Именно практический опыт позволяет нам соблюдать высокие стандарты
-          качества начиная от технического задания до участи в
+          качества начиная от технического задания до участия в
           пред-пусконаладочных работах.
         </p>
       </div>

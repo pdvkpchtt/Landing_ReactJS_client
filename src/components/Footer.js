@@ -15,7 +15,7 @@ const Footer = () => {
           className="[@media(max-width:1050px)]:mb-[12px] [@media(max-width:1050px)]:w-[86.56px] [@media(max-width:1050px)]:h-[60px]"
         />
 
-        <div className="flex flex-col gap-[8px] [@media(max-width:1050px)]:mt-[12px]">
+        <div className="flex flex-col gap-[4px] [@media(max-width:1050px)]:mt-[12px]">
           <a
             className="text-[14px] text-white underline transition duration-[250ms] hover:no-underline"
             href="https://docs.google.com/document/d/1Om2fqIpQWsSBrYnLkoMqbGZa3lbHc9lDNJMm3moy_V8/edit?usp=sharing"
@@ -30,6 +30,7 @@ const Footer = () => {
           >
             ssc-solutions@yandex.ru
           </a>
+          <p className="text-[14px] text-white">{"+7 (995) 883-08-96"}</p>
           <p className="text-[14px] text-white">© 2024 SSC SOLUTIONS</p>
         </div>
       </div>

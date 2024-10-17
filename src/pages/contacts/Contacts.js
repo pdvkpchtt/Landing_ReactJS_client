@@ -71,7 +71,7 @@ const Contacts = () => {
       <div className="flex flex-col w-full">
         {/* top image block */}
         <div className="relative">
-          <p className="text-white text-[70px] font-extrabold absolute z-[3] whitespace-pre-line leading-[72px] custom-shadow left-[50px] top-[100px] tracking-[-3%]">
+          <p className="text-white text-[70px] [@media(max-width:1050px)]:text-[55px] [@media(max-width:1050px)]:left-[10px] font-extrabold absolute z-[3] whitespace-pre-line leading-[72px] custom-shadow left-[50px] top-[100px] tracking-[-3%]">
             {`КОНТАКТЫ`}
           </p>
           <img
@@ -125,7 +125,7 @@ const Contacts = () => {
               caption={errors?.name && errors?.name?.message}
               register={register("name")}
             />
-            <div className="flex flex-row gap-[15px]">
+            <div className="flex flex-row gap-[15px]  [@media(max-width:1050px)]:flex-col">
               <Input
                 disabled={isPending}
                 placeholder="Почта"
