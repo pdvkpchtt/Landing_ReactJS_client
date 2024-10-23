@@ -94,7 +94,7 @@ const Contacts = () => {
 
         <div className="mt-[calc(335px+75px)] flex flex-col gap-[5px] w-full">
           <p className="text-center font-semibold text-[25px] text-[#2c2c2c] whitespace-pre-line leading-[120%]">
-            Оставте заявку и мы свяжемся с Вами в ближайшее время
+            Оставьте заявку и мы свяжемся с Вами в ближайшее время
           </p>
           <p className="text-center font-semibold text-[25px] text-[#315EAB] whitespace-pre-line leading-[120%]">
             ssc-solutions@yandex.ru
